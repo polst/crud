@@ -19,7 +19,7 @@ abstract class BaseIndexAction extends Action
     {
         $model = $this->createModel();
 
-        $query = $model->builder();
+        $query = $model; // ->builder();
 
         $searchModel = $this->createSearchModel();
 
